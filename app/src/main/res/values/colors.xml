@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="abc_search_url_text_normal">#ff7fa87f</color>
+    <color name="abc_search_url_text_selected">@android:color/black</color>
+    <color name="abc_search_url_text_pressed">@android:color/black</color>
+    <color name="transparent_black">#30000000</color>
+    <color name="transparent_black_dark">#b0000000</color>
+    <color name="black">#ff000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="transparent_white">#80ffffff</color>
+    <color name="transparent_white_light">#30ffffff</color>
+    <color name="red">#ffff0000</color>
+    <color name="seekbar_red">#ffff4b00</color>
+    <color name="seekbar_green">#ff78dc00</color>
+    <color name="seekbar_yellow">#ffffd700</color>
+    <color name="gmg_green">#cc1da750</color>
+    <color name="green">#ff24ff34</color>
+    <color name="green_dark">#ff3ac900</color>
+
+</resources>
