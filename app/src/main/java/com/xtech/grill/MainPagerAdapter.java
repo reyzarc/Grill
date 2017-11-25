@@ -5,6 +5,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import com.xtech.grill.ui.fragments.HomeFragment;
+import com.xtech.grill.ui.fragments.SettingFragment;
 
 
 /**
@@ -27,7 +28,7 @@ public class MainPagerAdapter extends FragmentPagerAdapter{
             case 1:
                 return HomeFragment.newInstance();
             case 2:
-                return HomeFragment.newInstance();
+                return SettingFragment.newInstance();
             default:
                 return null;
         }

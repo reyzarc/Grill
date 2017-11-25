@@ -15,7 +15,7 @@
         android:background="@color/transparent_black"
         android:id="@+id/radio_group"
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
 
@@ -28,6 +28,13 @@
             android:textColor="@drawable/main_tab_text"
             android:textSize="12sp" />
 
+        <View
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
+
         <RadioButton
             android:id="@+id/main_profiles_tab"
             style="@style/main_tab_style"
@@ -35,6 +42,12 @@
             android:text="烧烤程序"
             android:textColor="@drawable/main_tab_text"
             android:textSize="12sp" />
+        <View
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/white"/>
 
         <RadioButton
             android:id="@+id/main_setting_tab"

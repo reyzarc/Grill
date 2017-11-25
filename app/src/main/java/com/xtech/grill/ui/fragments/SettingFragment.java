@@ -18,17 +18,17 @@ import butterknife.Unbinder;
 /**
  * author : 武昌丶鱼
  * email  : reyzarc@163.com
- * time   : 2017-11-24
- * desc   : 主页界面
+ * time   : 2017-11-25
+ * desc   : 设定界面
  */
-public class HomeFragment extends Fragment {
+public class SettingFragment extends Fragment {
 
     @BindView(R.id.topbar)
     RelativeLayout topbar;
 
-    public static HomeFragment newInstance() {
+    public static SettingFragment newInstance() {
         Bundle args = new Bundle();
-        HomeFragment fragment = new HomeFragment();
+        SettingFragment fragment = new SettingFragment();
         fragment.setArguments(args);
         return fragment;
     }
@@ -36,8 +36,7 @@ public class HomeFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_home, null);
-
+        View view = inflater.inflate(R.layout.fragment_setting, null);
         ButterKnife.bind(this, view);
 
         UIUtils.initTopbar(getActivity(), topbar, true);
