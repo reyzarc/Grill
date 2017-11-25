@@ -1,13 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/grill_top_bar_bg"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:drawablePadding="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:drawableTop="@drawable/main_topbar_wifi"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="连接"
+                android:textColor="@drawable/main_topbar_text"
+                android:textSize="12sp" />
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:drawableTop="@drawable/main_topbar_switch"
+                android:gravity="center"
+                android:text="开关"
+                android:textColor="@drawable/main_topbar_text"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:text="主页"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:drawableTop="@drawable/main_topbar_timer"
+                android:gravity="center"
+                android:text="计时器"
+                android:textColor="@drawable/main_topbar_text"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:button="@null"
+                android:drawableTop="@drawable/main_topbar_flashlight"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="灯"
+                android:textColor="@drawable/main_topbar_text"
+                android:textSize="12sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
 
     <TextView
-        android:textColor="@color/red"
-        android:gravity="bottom|center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="主页"/>
+        android:gravity="bottom|center_horizontal"
+        android:text="主页"
+        android:textColor="@color/red" />
 
 </LinearLayout>
