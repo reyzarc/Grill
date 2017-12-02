@@ -20,10 +20,12 @@
         android:orientation="horizontal">
 
         <RadioButton
+            android:layout_marginTop="-4dp"
             android:id="@+id/main_home_tab"
             style="@style/main_tab_style"
             android:checked="true"
             android:drawableTop="@drawable/main_tab_home"
+            android:drawablePadding="-8dp"
             android:text="主页"
             android:textColor="@drawable/main_tab_text"
             android:textSize="12sp" />
@@ -36,6 +38,9 @@
             android:background="@color/white"/>
 
         <RadioButton
+            android:layout_marginTop="-4dp"
+
+            android:drawablePadding="-8dp"
             android:id="@+id/main_profiles_tab"
             style="@style/main_tab_style"
             android:drawableTop="@drawable/main_tab_profiles"
@@ -50,6 +55,9 @@
             android:background="@color/white"/>
 
         <RadioButton
+            android:layout_marginTop="-4dp"
+
+            android:drawablePadding="-8dp"
             android:id="@+id/main_setting_tab"
             style="@style/main_tab_style"
             android:drawableTop="@drawable/main_tab_setting"

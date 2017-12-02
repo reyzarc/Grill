@@ -10,41 +10,36 @@
         android:layout_height="50dp">
 
         <LinearLayout
+            android:paddingLeft="16dp"
             android:layout_alignParentBottom="true"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:background="@drawable/grill_top_bar_bg"
             android:orientation="horizontal">
 
-            <RadioButton
-                android:id="@+id/rl_wifi"
-                android:drawablePadding="0dp"
+            <TextView
+                android:layout_gravity="bottom"
+                android:id="@+id/tv_wifi"
+                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="@color/transparent"
-                android:button="@null"
                 android:drawableTop="@drawable/main_topbar_wifi"
-                android:gravity="center"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
                 android:text="连接"
+                android:textSize="12sp"
                 android:textColor="@drawable/main_topbar_text"
-                android:textSize="12sp" />
+                android:drawablePadding="-5dp"/>
 
-
-            <RadioButton
-                android:id="@+id/rl_switch"
+            <TextView
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/tv_switch"
+                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="@color/transparent"
-                android:button="@null"
                 android:drawableTop="@drawable/main_topbar_switch"
-                android:gravity="center"
                 android:text="开关"
+                android:textSize="12sp"
                 android:textColor="@drawable/main_topbar_text"
-                android:textSize="12sp" />
+                android:drawablePadding="-5dp"/>
 
         </LinearLayout>
 
@@ -61,26 +56,37 @@
             android:textSize="24sp" />
 
         <LinearLayout
+            android:paddingRight="16dp"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_alignParentRight="true"
             android:orientation="horizontal">
-
-
-            <RadioButton
-                android:id="@+id/rl_timer"
+            <TextView
+                android:layout_gravity="bottom"
+                android:layout_marginRight="8dp"
+                android:id="@+id/tv_timer"
+                android:gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom"
-                android:background="@color/transparent"
-                android:button="@null"
                 android:drawableTop="@drawable/main_topbar_timer"
-                android:gravity="center"
                 android:text="计时器"
+                android:textSize="12sp"
                 android:textColor="@drawable/main_topbar_text"
-                android:textSize="12sp" />
+                android:drawablePadding="-5dp"/>
 
-            <RadioButton
+            <TextView
+                android:layout_gravity="bottom"
+                android:id="@+id/tv_flashlight"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/main_topbar_flashlight"
+                android:text="灯"
+                android:textSize="12sp"
+                android:textColor="@drawable/main_topbar_text"
+                android:drawablePadding="-5dp"/>
+
+            <!--<RadioButton
                 android:id="@+id/rl_flashlight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -93,19 +99,19 @@
                 android:paddingRight="16dp"
                 android:text="灯"
                 android:textColor="@drawable/main_topbar_text"
-                android:textSize="12sp" />
+                android:textSize="12sp" />-->
 
 
         </LinearLayout>
     </RelativeLayout>
 
     <TextView
+        android:background="@color/transparent"
         android:gravity="center"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:id="@+id/tv_wifi_info"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/gmg_green"/>
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

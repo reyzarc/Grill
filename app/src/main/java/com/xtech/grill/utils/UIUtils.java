@@ -40,7 +40,7 @@ public class UIUtils {
         if(isTransparent){
             topBar.setBackgroundColor(context.getResources().getColor(R.color.transparent));
         }else{
-            topBar.setBackgroundColor(context.getResources().getColor(R.color.colorPrimary));
+            topBar.setBackgroundColor(context.getResources().getColor(R.color.transparent_black));
         }
     }
 

@@ -10,7 +10,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -31,16 +30,16 @@ public class HomeFragment extends Fragment {
 
     @BindView(R.id.topbar)
     RelativeLayout topbar;
-    @BindView(R.id.rl_wifi)
-    RadioButton rlWifi;
-    @BindView(R.id.rl_switch)
-    RadioButton rlSwitch;
-    @BindView(R.id.rl_timer)
-    RadioButton rlTimer;
-    @BindView(R.id.rl_flashlight)
-    RadioButton rlFlashlight;
     @BindView(R.id.tv_wifi_info)
     TextView tvWifiInfo;
+    @BindView(R.id.tv_wifi)
+    TextView tvWifi;
+    @BindView(R.id.tv_switch)
+    TextView tvSwitch;
+    @BindView(R.id.tv_timer)
+    TextView tvTimer;
+    @BindView(R.id.tv_flashlight)
+    TextView tvFlashlight;
 
     private WifiManager mWifiManager;
     private WifiInfo mWifiInfo;
@@ -61,17 +60,17 @@ public class HomeFragment extends Fragment {
 
         ButterKnife.bind(this, view);
 
-        UIUtils.initTopbar(getActivity(), topbar, true);
+        UIUtils.initTopbar(getActivity(), topbar, false);
 
 
         return view;
     }
 
 
-    @OnClick({R.id.rl_wifi, R.id.rl_switch, R.id.rl_timer, R.id.rl_flashlight})
+    @OnClick({R.id.tv_wifi, R.id.tv_switch, R.id.tv_timer, R.id.tv_flashlight})
     public void onViewClicked(View view) {
         switch (view.getId()) {
-            case R.id.rl_wifi:
+            case R.id.tv_wifi:
                 mDialog = new ProgressDialog(getActivity());
                 mDialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
                 mDialog.setMessage("处理中。。。");
@@ -79,11 +78,11 @@ public class HomeFragment extends Fragment {
                 mDialog.show();
                 isConnectToGrill();
                 break;
-            case R.id.rl_switch:
+            case R.id.tv_switch:
                 break;
-            case R.id.rl_timer:
+            case R.id.tv_timer:
                 break;
-            case R.id.rl_flashlight:
+            case R.id.tv_flashlight:
                 break;
         }
     }

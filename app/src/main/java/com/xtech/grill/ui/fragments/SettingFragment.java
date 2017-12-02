@@ -39,7 +39,7 @@ public class SettingFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_setting, null);
         ButterKnife.bind(this, view);
 
-        UIUtils.initTopbar(getActivity(), topbar, true);
+        UIUtils.initTopbar(getActivity(), topbar, false);
 
         return view;
     }
