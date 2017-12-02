@@ -35,7 +35,7 @@ public class UIUtils {
 //        topBar.setLayoutParams(params);
         //手动增加状态栏高度
         ViewGroup.LayoutParams params = topBar.getLayoutParams();
-        params.height = getStatusBarHeight(context)+dip2px(context,80);
+        params.height = getStatusBarHeight(context)+dip2px(context,46);
         topBar.setLayoutParams(params);
         if(isTransparent){
             topBar.setBackgroundColor(context.getResources().getColor(R.color.transparent));

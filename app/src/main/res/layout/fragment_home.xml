@@ -7,19 +7,21 @@
     <RelativeLayout
         android:id="@+id/topbar"
         android:layout_width="match_parent"
-        android:layout_height="55dp">
+        android:layout_height="50dp">
 
         <LinearLayout
+            android:layout_alignParentBottom="true"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/grill_top_bar_bg"
             android:orientation="horizontal">
 
             <RadioButton
+                android:id="@+id/rl_wifi"
                 android:drawablePadding="0dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="bottom"
                 android:background="@color/transparent"
                 android:button="@null"
                 android:drawableTop="@drawable/main_topbar_wifi"
@@ -32,9 +34,10 @@
 
 
             <RadioButton
+                android:id="@+id/rl_switch"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="bottom"
                 android:background="@color/transparent"
                 android:button="@null"
                 android:drawableTop="@drawable/main_topbar_switch"
@@ -49,6 +52,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
             android:layout_centerInParent="true"
             android:layout_gravity="center"
             android:text="主页"
@@ -63,9 +68,10 @@
 
 
             <RadioButton
+                android:id="@+id/rl_timer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="bottom"
                 android:background="@color/transparent"
                 android:button="@null"
                 android:drawableTop="@drawable/main_topbar_timer"
@@ -75,9 +81,10 @@
                 android:textSize="12sp" />
 
             <RadioButton
+                android:id="@+id/rl_flashlight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
+                android:layout_gravity="bottom"
                 android:background="@color/transparent"
                 android:button="@null"
                 android:drawableTop="@drawable/main_topbar_flashlight"
@@ -91,5 +98,14 @@
 
         </LinearLayout>
     </RelativeLayout>
+
+    <TextView
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:id="@+id/tv_wifi_info"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/gmg_green"/>
 
 </LinearLayout>
